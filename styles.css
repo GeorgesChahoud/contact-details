@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     width: 100vw;
     font-family: Verdana, Tahoma, sans-serif;
-    background: url(image/pic99.gif) no-repeat;
+    background: url(image/GifLock.gif) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -99,4 +99,8 @@ a {
     margin: 4px 8px;
     width: 44px;
     height: 44px;
+}
+
+.footer{
+    text-align: center;
 }
