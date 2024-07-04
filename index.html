@@ -7,6 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && (event.key === '+' || event.key === '-')) {
+                event.preventDefault();
+            }
+        });
+
+        window.addEventListener('mousewheel', function(event) {
+            if (event.ctrlKey) {
+                event.preventDefault();
+            }
+        }, { passive: false });
+    </script>
     <link rel="icon" href="image/G-iconn.png" type="image/x-icon">
     <title>Georges Chahoud</title>
 
