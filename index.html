@@ -6,24 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script>
-        document.addEventListener("contextmenu", function (event) {
-            alert("Inspect Elements Not Allowed");
-            event.preventDefault();
-        })
-
-        document.addEventListener('keydown', function (event) {
-            if (event.ctrlKey && (event.key === '+' || event.key === '-')) {
-                event.preventDefault();
-            }
-        });
-
-        window.addEventListener('mousewheel', function (event) {
-            if (event.ctrlKey) {
-                event.preventDefault();
-            }
-        }, { passive: false });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="icon" href="image/G-iconn.png" type="image/x-icon">
     <title>Georges Chahoud</title>
 
@@ -135,6 +118,29 @@
     </footer>
 
     <script src="app.js "></script>
+    <script>
+        document.addEventListener("contextmenu", function (event) {
+            // Show custom alert with SweetAlert
+            Swal.fire({
+                title: 'Action Restricted',
+                text: 'Inspect Elements Not Allowed',
+                icon: 'warning',
+                confirmButtonText: 'OK'
+            });
+            event.preventDefault(); // Prevent default right-click behavior
+        });
+        document.addEventListener('keydown', function (event) {
+            if (event.ctrlKey && (event.key === '+' || event.key === '-')) {
+                event.preventDefault();
+            }
+        });
+
+        window.addEventListener('mousewheel', function (event) {
+            if (event.ctrlKey) {
+                event.preventDefault();
+            }
+        }, { passive: false });
+    </script>
 
 </body>
 
