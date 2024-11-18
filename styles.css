@@ -8,7 +8,8 @@ body {
     flex-direction: column;
     width: 100vw;
     font-family: Verdana, Tahoma, sans-serif;
-    background: url(image/BG.gif) no-repeat;
+    /*background: url(image/BG.gif) no-repeat;*/
+    background: url(image/PIC.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -57,7 +58,8 @@ a {
 
 .tile {
     width: 95%;
-    background-color: rgb(36, 85, 233);
+    background-color: rgb(37, 167, 25);
+    /*background-color: rgb(36, 85, 233);*/
     margin: 7px;
     border-radius: 17px;
     display: flex;
